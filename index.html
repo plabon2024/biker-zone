@@ -26,15 +26,15 @@
             </div>
             <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
               <li>
-                <details>
-                  <summary>Home</summary>
-                  <ul class="p-2">
-                    <li><a>Bike Dekho</a></li>
-                    <li><a>Bike Dekho</a></li>
-                  </ul>
-                </details>
+               <a>Home</a>
               </li>
-              <li><a>Shop</a></li>
+              <li> <details>
+                  <summary>Shop</summary>
+                  <ul class="p-2">
+                    <li><a>Bike</a></li>
+                    <li><a>Car</a></li>
+                  </ul>
+                </details></li>
               <li><a>News</a></li>
               <li><a>Contact</a></li>
             </ul>
@@ -44,27 +44,27 @@
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 z-10">
             <li>
-              <details>
-                <summary>Home</summary>
-                <ul class="p-2">
-                  <li><a>Bike Dekho</a></li> <!-- 1st -->
-                  <li><a>Bike Dekho</a></li>
-                </ul>
-              </details>
+              <a>Home</a>
             </li>
-            <li><a>Shop</a></li>
+            <li><details>
+              <summary>Shop</summary>
+              <ul class="p-2">
+                <li><a>Bike</a></li> <!-- 1st -->
+                <li><a>Car</a></li>
+              </ul>
+            </details>></li>
             <li><a>News</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
         <div class="navbar-end">
-          <a class="btn">Button</a>
+          <a class="btn">Log In</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="space-y-20 md:container mx-auto">
+  <main class="space-y-20 md:container mx-auto mb-20">
     <!-- carousel  -->
     <section>
       <div class="carousel w-full">
@@ -156,19 +156,18 @@
           Best bike collection
         </p>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 justify-center items-center"> <!-- 1st -->
-        <img class="w-full" src="./images/others/feature-bike.png" alt="">
-        <img class="w-full" src="./images/others/feature-bike.png" alt="">
-        <img class="w-full" src="./images/others/feature-bike.png" alt="">
+      <div class="flex gap-20 flex-wrap justify-center items-center"> 
+        <img class="w-full basis-80" src="./images/others/feature-bike.png" alt="">
+        <img class="w-full basis-80" src="./images/others/feature-bike.png" alt="">
+        <img class="w-full basis-80" src="./images/others/feature-bike.png" alt="">
       </div>
     </section>
 
     <!-- Fetured Bikes card  -->
     <section class="space-y-5">
       <h1 class="text-4xl font-bold text-center">Fetured Bikes In This Year</h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mx-auto"> <!-- 2nd -->
-        <!-- card -->
-        <div class="card card-compact bg-base-100  shadow-xl">
+      <div class="flex flex-wrap gap-5 justify-center items-center"> 
+        <div class="card card-compact bg-base-100  shadow-xl basis-80">
           <figure>
             <img src="images/others/latest1.png" alt="Shoes" class="w-full" />
           </figure>
@@ -181,7 +180,7 @@
           </div>
         </div>
         <!-- card -->
-        <div class="card card-compact bg-base-100  shadow-xl">
+        <div class="card card-compact bg-base-100  shadow-xl basis-80">
           <figure>
             <img src="images/others/latest2.png" alt="Shoes" class="w-full" />
           </figure>
@@ -195,7 +194,7 @@
           </div>
         </div>
         <!-- card -->
-        <div class="card card-compact bg-base-100  shadow-xl">
+        <div class="card card-compact bg-base-100  shadow-xl basis-80">
           <figure>
             <img src="images/others/latest3.png" alt="Shoes" class="w-full" />
           </figure>
@@ -216,9 +215,9 @@
 <!-- Clients -->
     <section class="space-y-5 mx-auto">
       <h1 class="text-4xl font-bold text-center">Happy <span class="text-orange-500">Clients says</span></span></h1>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 justify-items-center items-center ">
+      <div class="flex flex-wrap gap-5 justify-center items-center ">
         <!-- card  -->
-        <div class="card bg-base-100 shadow-xl">
+        <div class="card bg-base-100 shadow-xl basis-80">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="w-40 rounded-full">
@@ -246,7 +245,7 @@
         </div>
 
         <!-- card  -->
-        <div class="card bg-base-100 shadow-xl">
+        <div class="card bg-base-100 shadow-xl basis-80">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="w-40 rounded-full">
@@ -273,7 +272,7 @@
           </div>
         </div>
         <!-- card  -->
-        <div class="card bg-base-100 shadow-xl">
+        <div class="card bg-base-100 shadow-xl basis-80">
           <figure class="px-10 pt-10">
             <div class="avatar">
               <div class="w-40 rounded-full">
@@ -312,6 +311,7 @@
         <img src="images/others/faq.png" alt="">
 
         <div class="flex flex-col justify-between w-full">
+
           <!-- faq -->
           <div tabindex="0" class="collapse collapse-open collapse-arrow border-base-300  border">
             <div class="collapse-title text-xl font-medium">What are the most important things I should
@@ -324,6 +324,7 @@
           </div>
           <!-- faq -->
           <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+            <input type="checkbox" class="peer" />
             <div class="collapse-title text-xl font-medium">How can I tell if my helmet is old and I need a 
               new one?</div>
             <div class="collapse-content">
@@ -334,6 +335,7 @@
           </div>
           <!-- faq -->
           <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+            <input type="checkbox" class="peer" />
             <div class="collapse-title text-xl font-medium">My bike has been in storage is it safe to ride?</div>
             <div class="collapse-content">
               <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the
@@ -343,6 +345,7 @@
           </div>
           <!-- faq -->
           <div tabindex="0" class="collapse collapse-arrow border-base-300 border">
+            <input type="checkbox" class="peer" />
             <div class="collapse-title text-xl font-medium">What rules should I follow when riding my bike?</div>
             <div class="collapse-content">
               <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and laws. Get in the
@@ -359,15 +362,15 @@
   </main>
 
   <footer class="footer bg-black text-neutral-content  p-10 flex flex-col lg:flex-row lg:justify-between">
-    <aside>
+    <aside class="space-y-5">
       <nav>
-        <div class="grid grid-flow-col gap-4">
+        <div class="flex flex-wrap gap-5">
           <a> Download Now</a>
           <a>License</a>
         </div>
       </nav>
-      <nav>
-        <div class="grid grid-cols-2 md:grid-cols-6 gap-4"> <!--grid-flow-col -->
+      <nav class="space-y-5">
+        <div class="flex flex-wrap gap-5"> <!--grid-flow-col -->
           <a> About</a>
           <a>Features</a>
           <a>Pricing</a>
